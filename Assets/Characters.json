@@ -1,0 +1,1116 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Astrochimp",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [
+        1,
+        2
+      ],
+      "revealPowers": [
+        {
+          "name": "Acrobatics",
+          "description": "Gains ZeroBorn: May Free Step or Airlock into a zero Gravity Section instead of Free Pickup or Drop",
+          "powerType": 5
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/AstroChimp.png",
+      "agenda": {
+        "name": "Shiny Things",
+        "objectives": [
+          {
+            "description": "3 points if Astrochimp Escapes",
+            "pointValue": 3,
+            "subObjectives": [
+              {
+                "description": "+2 points if in Possession of Briefcase",
+                "pointValue": 2
+              },
+              {
+                "description": "+2 point if in Possession of Artifact",
+                "pointValue": 2
+              },
+              {
+                "description": "+2 points if in Possession of a Gun",
+                "pointValue": 2
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "Friend: 2 points if Astrochimp is your BC and Escapes",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 2,
+      "name": "Billionaire",
+      "characterType": 1,
+      "influenceLimit": 3,
+      "abilities": [
+        3,
+        4
+      ],
+      "revealPowers": [
+        {
+          "name": "Hollow Promises",
+          "description": "Upon Reveal gain and/or return all three grey Bribe tokens.",
+          "powerType": 2
+        }
+      ],
+      "gamePlayQuirks": [
+        {
+          "description": "Fletcher is and item that can be Picked Up, Dropped, Thrown etc."
+        },
+        {
+          "description": "Fletcher cannot be Attacked or Downed but can be annihilated (has a helmet)"
+        },
+        {
+          "description": "Starts with 3 grey Bribes"
+        }
+      ],
+      "iconUrl": "/img/characterIcons/Billionaire.png",
+      "agenda": {
+        "name": "Survive",
+        "objectives": [
+          {
+            "description": "4 points if Billionaire Escapes",
+            "pointValue": 4,
+            "subObjectives": [
+              {
+                "description": "+1 point if not Colocated with Live Humans or Robots at Stationfall.",
+                "pointValue": 1
+              }
+            ]
+          },
+          {
+            "description": "2 points if Fletcher Escapes",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "+1 point if Fletcher and Billionaire are Colocated when Escaping.",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": [
+          {
+            "description": "Billionaire doesn't score any Possessed or unused Bribes"
+          }
+        ]
+      },
+      "bonusPoints": {
+        "type": 2,
+        "Description": "Friend: 2 point if Billionaire is your BC and Fletcher Escapes.",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    },
+    {
+      "id": 0,
+      "name": "X",
+      "characterType": 0,
+      "influenceLimit": 0,
+      "abilities": [
+        0,
+        0
+      ],
+      "revealPowers": [
+        {
+          "name": "X",
+          "description": "X",
+          "powerType": 0
+        }
+      ],
+      "gamePlayQuirks": null,
+      "iconUrl": "/img/characterIcons/X.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
+          {
+            "description": "X",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "X",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": null
+      },
+      "bonusPoints": {
+        "type": 1,
+        "Description": "X",
+        "pointsValue": 2
+      }
+    }
+  ]
+}

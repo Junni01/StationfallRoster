@@ -1,0 +1,34 @@
+{
+  "abilityTypes": [
+    {
+      "id": 1,
+      "name": "Console",
+      "color": "Orange"
+    },
+    {
+      "id": 2,
+      "name": "Conspiracy",
+      "color": "Purple"
+    },
+    {
+      "id": 3,
+      "name": "Offensive",
+      "color": "Red"
+    },
+    {
+      "id": 4,
+      "name": "Defensive",
+      "color": "Green"
+    },
+    {
+      "id": 5,
+      "name": "Mobility",
+      "color": "Yellow"
+    },
+    {
+      "id": 6,
+      "name": "Utility",
+      "color": "Pink"
+    }
+  ]
+}

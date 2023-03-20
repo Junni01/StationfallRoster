@@ -1,0 +1,16 @@
+{
+    "characterTypes": [
+        {
+            "id": 1,
+            "name": "Human"
+        },
+        {
+            "id": 2,
+            "name": "Robot"
+        },
+        {
+            "id": 3,
+            "name": "Human and Robot"
+        }
+    ]
+}
