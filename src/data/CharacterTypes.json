@@ -1,0 +1,18 @@
+{
+    "characterTypes": [
+        {
+            "id": 1,
+            "name": "Human",
+            "description": "Cannot be Downed or Robbed with bludgeon when has a helmet. Downed by Hazards."
+        },
+        {
+            "id": 2,
+            "name": "Robot",
+            "description": "Not affected by Hazards. Helmet does not protect from downing/robbing by Bludgeon."
+        },
+        {
+            "id": 3,
+            "name": "Human and Robot"
+        }
+    ]
+}
