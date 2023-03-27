@@ -1,0 +1,58 @@
+{
+    "bonusPointsTypes": [
+        {
+            "id": 1,
+            "name": "Friend",
+            "description": "2 points if {Character} is your BC and Escapes",
+            "pointValue": 2
+        },
+        {
+            "id": 2,
+            "name": "Grudge",
+            "description": "2 points if {Character} is your BC and is not Live at Stationfall",
+            "pointValue": 2
+        },
+        {
+            "id": 3,
+            "name": "Friend",
+            "description": "1 point if {Character} is your BC and Escapes",
+            "pointValue": 1
+        },
+        {
+            "id": 4,
+            "name": "Grudge",
+            "description": "1 point if {Character} is your BC and is not Live at Stationfall",
+            "pointValue": 1
+        },
+        {
+            "id": 5,
+            "name": "Friend",
+            "description": "2 points if Billionaire is your BC and <i>Fletcher</i> Escapes",
+            "pointValue": 2
+        },
+        {
+            "id": 6,
+            "name": "Friend",
+            "description": "2 points if Botanist is your BC and <i>Fang Moss</i> Escapes (No points if Botanist Escapes)",
+            "pointValue": 2
+        },
+        {
+            "id": 7,
+            "name": "Non BC",
+            "description": "{Character} can not be anyone's BC",
+            "pointValue": 0
+        },
+        {
+            "id": 8,
+            "name": "Friend",
+            "description": "1 point for every Clone that Escapes. +1 if all 3 Clones Escape",
+            "pointValue": 2
+        },
+        {
+            "id": 9,
+            "name": "Grudge",
+            "description": "3 points if {Character} is your BC and is not Live at Stationfall",
+            "pointValue": 3
+        },
+    ]
+}
