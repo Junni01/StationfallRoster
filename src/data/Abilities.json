@@ -17,8 +17,7 @@
       "name": "Live Streams",
       "type": 4,
       "description": "If Jammers are OFF, Billionaire's and Fletcher's Sections act as if Lit and Cameras are ON."
-    }
-    ,
+    },
     {
       "id": 4,
       "name": "Rich",
@@ -74,22 +73,22 @@
       "description": "After Downing a Human in a Lit Section, the active player may choose another player who has a Colocated Conspirator to become Suspect instead."
     },
     {
-        "id": 13,
-        "name": "Vengeful",
-        "type": 3,
-        "description": "Using Corpsicle's Kompromat will additionally give her a Bludgeon. Her Kompromat can be used even if Down, which will instantly Revive her if down."
+      "id": 13,
+      "name": "Vengeful",
+      "type": 3,
+      "description": "Using Corpsicle's Kompromat will additionally give her a Bludgeon. Her Kompromat can be used even if Down, which will instantly Revive her if down."
     },
     {
-        "id": 14,
-        "name": "Dying",
-        "type": 2,
-        "description": "May not be activated when Exhausted and gets no free Pick Up or Drop when activated."
+      "id": 14,
+      "name": "Dying",
+      "type": 2,
+      "description": "May not be activated when Exhausted and gets no free Pick Up or Drop when activated."
     },
     {
-        "id": 15,
-        "name": "Wormtongue",
-        "type": 2,
-        "description": "As an Action, move a cube on a Colocated Human's card to Betrayal."
+      "id": 15,
+      "name": "Wormtongue",
+      "type": 2,
+      "description": "As an Action, move a cube on a Colocated Human's card to Betrayal."
     },
     {
       "id": 16,

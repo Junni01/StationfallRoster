@@ -8,7 +8,7 @@ type AbilityProps = {
 export const CharacterAbilityBox = (props: AbilityProps) => {
   return (
     <div>
-      <h1>{props.ability.name}</h1>
+      <h3>{props.ability.name}</h3>
       <ul>
         <li>{props.ability.description}</li>
       </ul>

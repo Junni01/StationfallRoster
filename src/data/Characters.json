@@ -5,10 +5,7 @@
       "name": "Astrochimp",
       "characterType": 1,
       "influenceLimit": 5,
-      "abilities": [
-        1,
-        2
-      ],
+      "abilities": [1, 2],
       "revealPowers": [
         {
           "name": "Acrobatics",
@@ -16,7 +13,7 @@
           "powerType": 5
         }
       ],
-      "gamePlayQuirks": null,
+      "gamePlayQuirks": [],
       "iconUrl": "/img/characterIcons/AstroChimp.png",
       "agenda": {
         "name": "Shiny Things",
@@ -40,7 +37,7 @@
             ]
           }
         ],
-        "ScoringQuirks": null
+        "ScoringQuirks": []
       },
       "bonusPoints": 1
     },
@@ -49,10 +46,7 @@
       "name": "Billionaire",
       "characterType": 1,
       "influenceLimit": 3,
-      "abilities": [
-        3,
-        4
-      ],
+      "abilities": [3, 4],
       "revealPowers": [
         {
           "name": "Hollow Promises",
@@ -61,15 +55,9 @@
         }
       ],
       "gamePlayQuirks": [
-        {
-          "description": "Fletcher is and item that can be Picked Up, Dropped, Thrown etc."
-        },
-        {
-          "description": "Fletcher cannot be Attacked or Downed but can be annihilated (has a helmet)"
-        },
-        {
-          "description": "Starts with 3 grey Bribes"
-        }
+        "Fletcher is and item that can be Picked Up, Dropped, Thrown etc.",
+        "Fletcher cannot be Attacked or Downed but can be annihilated (has a helmet)",
+        "Starts with 3 grey Bribes"
       ],
       "iconUrl": "/img/characterIcons/Billionaire.png",
       "agenda": {
@@ -97,48 +85,57 @@
           }
         ],
         "ScoringQuirks": [
-          {
-            "description": "Billionaire doesn't score any Possessed or unused Bribes"
-          }
+          "Billionaire doesn't score any Possessed or unused Bribes"
         ]
       },
       "bonusPoints": 5
     },
     {
-      "id": 0,
+      "id": 3,
       "name": "X",
-      "characterType": 0,
-      "influenceLimit": 0,
-      "abilities": [
-        0,
-        0
-      ],
+      "characterType": 1,
+      "influenceLimit": 1,
+      "abilities": [0],
       "revealPowers": [
         {
           "name": "X",
           "description": "X",
-          "powerType": 0
+          "powerType": 1
         }
       ],
-      "gamePlayQuirks": null,
+      "gamePlayQuirks": [
+        "X"
+      ],
       "iconUrl": "/img/characterIcons/X.png",
       "agenda": {
         "name": "X",
         "objectives": [
           {
-            "description": "X",
-            "pointValue": 0,
+            "description": "x",
+            "pointValue": 4,
             "subObjectives": [
               {
-                "description": "X",
+                "description": "x",
+                "pointValue": 1
+              }
+            ]
+          },
+          {
+            "description": "X",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "x",
                 "pointValue": 0
               }
             ]
           }
         ],
-        "ScoringQuirks": null
+        "ScoringQuirks": [
+          "X"
+        ]
       },
       "bonusPoints": 1
-    } 
+    }
   ]
 }

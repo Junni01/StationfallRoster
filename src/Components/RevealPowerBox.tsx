@@ -7,7 +7,7 @@ type RevealPowerProps = {
 export const CharacterRevealPowerBox = (props: RevealPowerProps) => {
   return (
     <div>
-      <h1>{props.revealPower.name}</h1>
+      <h3>{props.revealPower.name}</h3>
       <ul>
         <li>{props.revealPower.description}</li>
       </ul>

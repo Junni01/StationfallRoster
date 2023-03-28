@@ -12,7 +12,8 @@
         },
         {
             "id": 3,
-            "name": "Human and Robot"
+            "name": "Human and Robot",
+            "description": "Both"
         }
     ]
 }

@@ -13,6 +13,7 @@ export interface Character {
       ScoringQuirks: string[]
     },
     bonusPoints: BonusPointsType
+    status: CharacterStatus
 }
 
 export interface RevealPower {
@@ -24,7 +25,7 @@ export interface RevealPower {
 export interface Objective {
 description: string,
 pointValue: number,
-subObjective: SubObjective[]
+subObjectives: SubObjective[]
 }
 
 export interface SubObjective {
@@ -56,4 +57,13 @@ export interface BonusPointsType {
     name: string ,
     description: string,
     pointValue: number
+}
+
+export interface CharacterStatus {
+    inPlay: boolean,
+    exhausted: boolean,
+    down: boolean,
+    escaped: boolean,
+    annihilated: boolean,
+    revealed: boolean
 }
