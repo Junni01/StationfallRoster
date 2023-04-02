@@ -4,6 +4,7 @@ import abilitiesJSON from "./Abilities.json";
 import characterTypesJSON from "./CharacterTypes.json";
 import bonusPointTypesJSON from "./BonuspointsTypes.json";
 import {
+  AbilityColor,
   AbilityType,
   BonusPointsType,
   Character,
@@ -21,11 +22,14 @@ export function ReadCharacterData(): Character[] {
         pointValue: bp.pointValue,
       };
     });
-  const abilityTypes: AbilityType[] = abilityTypesJSON.abilityTypes.map(
-    (at) => {
-      return { id: at.id, name: at.name, color: at.color };
+  const abilityColors: AbilityColor[] = abilityTypesJSON.abilityColors.map(
+    (ac) => {
+      return { id: ac.id, name: ac.name, color: ac.color };
     }
   );
+  const abilityTypes : AbilityType[] = abilityTypesJSON.abilityTypes.map(
+    (at) => { return { id: at.id, name: at.name, icon: at.icon}}
+  )
 
   const characterTypes: CharacterType[] = characterTypesJSON.characterTypes.map(
     (ct) => {
@@ -41,17 +45,22 @@ export function ReadCharacterData(): Character[] {
     return {
       id: a.id,
       name: a.name,
-      type: abilityTypes.find((at) => at.id === a.type) ?? {
+      abilityColor: abilityColors.find((ac) => ac.id === a.abilityColor) ?? {
         id: 0,
         name: "",
         color: "",
+      },
+      abilityType: abilityTypes.find((at) => at.id === a.abilityType) ?? {
+        id: 0,
+        name: "",
+        icon: ""
       },
       description: a.description,
     };
   });
 
   const characters: Character[] = charactersJSON.characters.map((c) => {
-    const abilitytemp = c.abilities.map((aid) => {
+    const characterAbilities = c.abilities.map((aid) => {
       return (
         abilities.find((a) => 
           a.id === aid
@@ -59,10 +68,37 @@ export function ReadCharacterData(): Character[] {
           id: 0,
           name: "",
           description: "",
-          type: {
+          abilityColor: {
             id: 0,
             name: "",
             color: "",
+          },
+          abilityType: {
+            id: 0,
+            name: "",
+            icon: "",
+          },
+        }
+      );
+    });
+
+        const characterRevealPowers = c.revealPowers.map((aid) => {
+      return (
+        abilities.find((a) => 
+          a.id === aid
+        ) ?? {
+          id: 0,
+          name: "",
+          description: "",
+          abilityColor: {
+            id: 0,
+            name: "",
+            color: "",
+          },
+          abilityType: {
+            id: 0,
+            name: "",
+            icon: "",
           },
         }
       );
@@ -78,16 +114,8 @@ const character : Character = {
       description: "",
     },
     influenceLimit: c.influenceLimit,
-    abilities: abilitytemp,
-    revealPowers: c.revealPowers.map((rp) => {
-      return {
-        name: rp.name,
-        description: rp.description,
-        powerType: abilityTypes.find((at) => {
-          at.id === rp.powerType;
-        }) ?? { id: 0, name: "", color: "" },
-      };
-    }),
+    abilities: characterAbilities,
+    revealPowers: characterRevealPowers,
     gamePlayQuirks: c.gamePlayQuirks,
     iconUrl: c.iconUrl,
     agenda: {

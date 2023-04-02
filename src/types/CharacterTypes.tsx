@@ -4,7 +4,7 @@ export interface Character {
     characterType: CharacterType,
     influenceLimit: number,
     abilities: CharacterAbility[],
-    revealPowers: RevealPower[],
+    revealPowers: CharacterAbility[],
     gamePlayQuirks: string[],
     iconUrl: string,
     agenda: {
@@ -14,12 +14,6 @@ export interface Character {
     },
     bonusPoints: BonusPointsType
     status: CharacterStatus
-}
-
-export interface RevealPower {
-    name: string,
-    description: string,
-    powerType: AbilityType
 }
 
 export interface Objective {
@@ -36,7 +30,8 @@ export interface SubObjective {
 export interface CharacterAbility {
         id: number,
         name: string,
-        type: AbilityType,
+        abilityColor: AbilityColor,
+        abilityType: AbilityType
         description: string
       }
 
@@ -46,10 +41,17 @@ export interface CharacterType {
     description: string
 }
 
-export interface AbilityType {
+export interface AbilityColor {
     id: number,
     name: string,
     color: string
+}
+
+
+export interface AbilityType {
+    id: number,
+    name: string,
+    icon: string
 }
 
 export interface BonusPointsType {

@@ -1,5 +1,5 @@
 {
-  "abilityTypes": [
+  "abilityColors": [
     {
       "id": 1,
       "name": "Console",
@@ -30,5 +30,22 @@
       "name": "Utility",
       "color": "Pink"
     }
+  ],
+  "abilityTypes": [
+    {
+      "id": 1,
+      "name": "Persistent",
+      "icon": "Persistent.png"
+    },
+    {
+      "id": 2,
+      "name": "Immediate",
+      "icon": "Immediate.png"
+    },
+    {
+      "id": 3,
+      "name": "Action",
+      "icon": "Action.png"
+    }  
   ]
 }

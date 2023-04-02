@@ -1,7 +1,7 @@
-import { RevealPower } from "../types/CharacterTypes";
+import { CharacterAbility } from "../types/CharacterTypes";
 
 type RevealPowerProps = {
-  revealPower: RevealPower;
+  revealPower: CharacterAbility;
 };
 
 export const CharacterRevealPowerBox = (props: RevealPowerProps) => {

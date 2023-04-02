@@ -6,15 +6,9 @@
       "characterType": 1,
       "influenceLimit": 5,
       "abilities": [1, 2],
-      "revealPowers": [
-        {
-          "name": "Acrobatics",
-          "description": "Gains ZeroBorn: May Free Step or Airlock into a zero Gravity Section instead of Free Pickup or Drop",
-          "powerType": 5
-        }
-      ],
+      "revealPowers": [101],
       "gamePlayQuirks": [],
-      "iconUrl": "/img/characterIcons/AstroChimp.png",
+      "iconUrl": "AstroChimp.png",
       "agenda": {
         "name": "Shiny Things",
         "objectives": [
@@ -47,19 +41,13 @@
       "characterType": 1,
       "influenceLimit": 3,
       "abilities": [3, 4],
-      "revealPowers": [
-        {
-          "name": "Hollow Promises",
-          "description": "Upon Reveal gain and/or return all three grey Bribe tokens.",
-          "powerType": 2
-        }
-      ],
+      "revealPowers": [102],
       "gamePlayQuirks": [
         "Fletcher is and item that can be Picked Up, Dropped, Thrown etc.",
         "Fletcher cannot be Attacked or Downed but can be annihilated (has a helmet)",
         "Starts with 3 grey Bribes"
       ],
-      "iconUrl": "/img/characterIcons/Billionaire.png",
+      "iconUrl": "Billionaire.png",
       "agenda": {
         "name": "Survive",
         "objectives": [
@@ -92,37 +80,141 @@
     },
     {
       "id": 3,
-      "name": "X",
+      "name": "Boarder",
       "characterType": 1,
-      "influenceLimit": 1,
-      "abilities": [0],
-      "revealPowers": [
-        {
-          "name": "X",
-          "description": "X",
-          "powerType": 1
-        }
-      ],
+      "influenceLimit": 4,
+      "abilities": [5, 6],
+      "revealPowers": [103, 104],
       "gamePlayQuirks": [
-        "X"
+        "Boarder starts with a bludgeon, gun and helmet on her Character card"
       ],
+      "iconUrl": "Boarder.png",
+      "agenda": {
+        "name": "Loot",
+        "objectives": [
+          {
+            "description": "2 points if Boarder Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+              {
+                "description": "+4 points if Boarder in Possession of Briefcase or if Briefcase is in Outer Space at Stationfall.",
+                "pointValue": 4
+              },
+              {
+                "description": "+1 point for ever Live Human in Outer Space at Stationfall",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": [
+          "Boarder can win even if Guilty",
+          "Boarder scores double for Possessed Bribes"
+        ]
+      },
+      "bonusPoints": 3
+    },
+    {
+      "id": 4,
+      "name": "Botanist",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [7, 8],
+      "revealPowers": [105],
+      "gamePlayQuirks": [
+        "Fang moss is an Item. Any Character Possessing Fang Moss gets access to the Feed Me! Action."
+      ],
+      "iconUrl": "Botanist.png",
+      "agenda": {
+        "name": "Blood Meal",
+        "objectives": [
+          {
+            "description": "2 points for every Human Annihilated by Fang Moss",
+            "pointValue": 0,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Fang Moss Escapes",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Botanist Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+              {
+                "description": "+1 point if Contaminated.",
+                "pointValue": 1
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 6
+    },
+    {
+      "id": 5,
+      "name": "Colonel",
+      "characterType": 1,
+      "influenceLimit": 4,
+      "abilities": [9, 10],
+      "revealPowers": [106],
+      "gamePlayQuirks": ["Colonel can not be Bribed.", "Starts with a Gun."],
+      "iconUrl": "Colonel.png",
+      "agenda": {
+        "name": "Weapons Test",
+        "objectives": [
+          {
+            "description": "3 points if Colonel Escapes",
+            "pointValue": 3,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if at least one Contaminated NPC Escapes.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Project X is released.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if the X-Secret Escapes.",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 6,
+      "name": "Consotrt",
+      "characterType": 2,
+      "influenceLimit": 6,
+      "abilities": [],
+      "revealPowers": [],
+      "gamePlayQuirks": ["X"],
       "iconUrl": "/img/characterIcons/X.png",
       "agenda": {
         "name": "X",
         "objectives": [
           {
             "description": "x",
-            "pointValue": 4,
+            "pointValue": 0,
             "subObjectives": [
               {
                 "description": "x",
-                "pointValue": 1
+                "pointValue": 0
               }
             ]
           },
           {
             "description": "X",
-            "pointValue": 1,
+            "pointValue": 0,
             "subObjectives": [
               {
                 "description": "x",
@@ -131,11 +223,9 @@
             ]
           }
         ],
-        "ScoringQuirks": [
-          "X"
-        ]
+        "ScoringQuirks": ["X"]
       },
-      "bonusPoints": 1
+      "bonusPoints": 0
     }
   ]
 }

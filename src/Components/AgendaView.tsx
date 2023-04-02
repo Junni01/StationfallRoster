@@ -6,11 +6,15 @@ type CharacterProps = {
 };
 
 export const CharacterAgendaView = (props: CharacterProps) => {
+
+const agenda = props.character.agenda;
+const bonusPoints = props.character.bonusPoints;
+
   return (
     <div>
-      <h1>{props.character.agenda.name}</h1>
+      <h1>{agenda.name}</h1>
       <div>
-        {props.character.agenda.objectives.map((o) => (
+        {agenda.objectives.map((o) => (
           <div>
             <h2>{o.description}</h2>
             <ul>
@@ -21,14 +25,15 @@ export const CharacterAgendaView = (props: CharacterProps) => {
           </div>
         ))}
       </div>
-      <h2>Scoring quirks</h2>
+      {agenda.ScoringQuirks.length > 0 ? <h2>Scoring quirks</h2> : ""}
       <ul>
-        {props.character.agenda.ScoringQuirks.map((q) => (
+        {agenda.ScoringQuirks.map((q) => (
           <li>{q}</li>
         ))}
       </ul>
+
       <h2>Bonus Character points</h2>
-      {props.character.bonusPoints.name}: {props.character.bonusPoints.description}
+      {bonusPoints.name}: {bonusPoints.description}
     </div>
   );
 };
