@@ -192,40 +192,864 @@
     },
     {
       "id": 6,
-      "name": "Consotrt",
+      "name": "Consort",
       "characterType": 2,
       "influenceLimit": 6,
-      "abilities": [],
-      "revealPowers": [],
-      "gamePlayQuirks": ["X"],
-      "iconUrl": "/img/characterIcons/X.png",
+      "abilities": [11, 12],
+      "revealPowers": [107],
+      "gamePlayQuirks": ["Despite Appearances, Consort is a Robot"],
+      "iconUrl": "Consort.png",
       "agenda": {
-        "name": "X",
+        "name": "New Life",
         "objectives": [
           {
-            "description": "x",
+            "description": "0 points if Consort Escapes",
             "pointValue": 0,
             "subObjectives": [
               {
-                "description": "x",
-                "pointValue": 0
+                "description": "+3 points if not Colocated with Live Human or Robot at Stationfall",
+                "pointValue": 3
+              },
+              {
+                "description": "+3 points if Possess Briefcase",
+                "pointValue": 3
+              },
+              {
+                "description": "+1 point if Secret Identity not Revealed until Stationfall",
+                "pointValue": 1
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": ["Consort scores double for Possessed Bribes"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 7,
+      "name": "Corpsicle",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [13, 14],
+      "revealPowers": [108],
+      "gamePlayQuirks": [
+        "Starts Down",
+        "Has an integral Helmet (Cannot be removed)"
+      ],
+      "iconUrl": "Corpsicle.png",
+      "agenda": {
+        "name": "Miracle Cure",
+        "objectives": [
+          {
+            "description": "3 points if Corpsicle Escapes",
+            "pointValue": 3,
+            "subObjectives": [
+              {
+                "description": "+2 points if Possess Nanogel",
+                "pointValue": 2
               }
             ]
           },
+          {
+            "description": "2 points if X-Secret Escapes",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Project X is not released",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 10
+    },
+    {
+      "id": 8,
+      "name": "Counselor",
+      "characterType": 1,
+      "influenceLimit": 6,
+      "abilities": [9, 15],
+      "revealPowers": [109],
+      "gamePlayQuirks": [],
+      "iconUrl": "Counsellor.png",
+      "agenda": {
+        "name": "Cloak and Dagger",
+        "objectives": [
+          {
+            "description": "2 points if Counselor Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+            ]
+          },
+          {
+            "description": "4 points if the Artifact Escapes",
+            "pointValue": 4,
+            "subObjectives": [
+            ]
+          },
+          {
+            "description": "2 points if you have more Kompromat thant any other player at Stationfall",
+            "pointValue": 2,
+            "subObjectives": [
+            ]
+          },
+          {
+            "description": "1 point if you have the least Cubes in Betrayal Box at Stationfall",
+            "pointValue": 1,
+            "subObjectives": [
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 0
+    },
+    {
+      "id": 9,
+      "name": "Cyborg",
+      "characterType": 3,
+      "influenceLimit": 4,
+      "abilities": [16, 6],
+      "revealPowers": [110, 111],
+      "gamePlayQuirks": ["Act as Human in the case of Hazards and Attacks"],
+      "iconUrl": "Cyborg.png",
+      "agenda": {
+        "name": "Revenge",
+        "objectives": [
+          {
+            "description": "1 point for each Character with Officer that is Down at Stationfall",
+            "pointValue": 0,
+            "subObjectives": [            ]
+          },
+          {
+            "description": "2 points if no Human PCs Escape",
+            "pointValue": 2,
+            "subObjectives": [            ]
+          },
+          {
+            "description": "2 points if no Contamination Escapes",
+            "pointValue": 2,
+            "subObjectives": [            ]
+          },
+          {
+            "description": "2 points if Project X was released.",
+            "pointValue": 2,
+            "subObjectives": [            ]
+          }
+        ],
+        "ScoringQuirks": ["Cyborg can win even if Guilty"]
+      },
+      "bonusPoints": 2
+    },
+    {
+      "id": 10,
+      "name": "Daredevil",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [17, 18],
+      "revealPowers": [112],
+      "gamePlayQuirks": ["X"],
+      "iconUrl": "Daredevil.png",
+      "agenda": {
+        "name": "Thrillseeker",
+        "objectives": [
+          {
+            "description": "3 points if Daredevil Escapes",
+            "pointValue": 3,
+            "subObjectives": [
+              {
+                "description": "+2 points if you are the only Human that Escapes",
+                "pointValue": 2
+              },
+              {
+                "description": "+2 points if Possess Aftifact or are Contaminated",
+                "pointValue": 2
+              }
+            ]
+          },
+          {
+            "description": "1 point if Project X was released",
+            "pointValue": 1,
+            "subObjectives": [
+            ]
+          }
+        ],
+        "ScoringQuirks": ["With Point Break ability Daredevil only needs to Possess ad Helmet and by Colocated with Rocket Wings at Stationfall to Escape, she doesn't need to Possess Rocket Wings.", "Even if Daredevil can be in Outer Space without Helmet she still needs a Helmet to take the Rocket Wings Launch action."]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 11,
+      "name": "Digital Assistant",
+      "characterType": 4,
+      "influenceLimit": 5,
+      "abilities": [19, 20],
+      "revealPowers": [113, 114],
+      "gamePlayQuirks": ["Digital Assistant is Data, and cannot Possess Items or Data", "Digital Assistant can be Manufactured in Mainframe", "Blackout prevents Digital Assistant from doing Console Actions", "Digital Assistan can only perform Console Actions, even when no Character Manufactured you yet."],
+      "iconUrl": "DigitalAssistant.png",
+      "agenda": {
+        "name": "Proliferate",
+        "objectives": [
+          {
+            "description": "2 points for every Escaped Robot that Possesses Digital Assistant",
+            "pointValue": 0,
+            "subObjectives": [
+            ]
+          },
+          {
+            "description": "1 point for every Offsite or Escaped Human that Possesses Digital Assistant",
+            "pointValue": 0,
+            "subObjectives": [
+            ]
+          },
+          {
+            "description": "2 points if at least two copies of Digital Assistant Escape",
+            "pointValue": 2,
+            "subObjectives": [
+            ]
+          }
+        ],
+        "ScoringQuirks": ["Can win even if Guilty"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 12,
+      "name": "Doctor (Hyde)",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [7, 21],
+      "revealPowers": [115],
+      "gamePlayQuirks": ["Doctor has 2 Identity Cards. Each Identity card has its own Agenda.","Doctor may be the PC of two players. A player trying to Bribe or use Kompromat on such a PC must choose one of the two players to accept or refuse. Both players become suspect if Kompromat is refused."],
+      "iconUrl": "Doctor.png",
+      "agenda": {
+        "name": "X",
+        "objectives": [
           {
             "description": "X",
             "pointValue": 0,
             "subObjectives": [
               {
-                "description": "x",
+                "description": "X",
+                "pointValue": 0
+              },
+              {
+                "description": "X",
+                "pointValue": 0
+              },
+              {
+                "description": "X",
                 "pointValue": 0
               }
             ]
           }
         ],
+        "ScoringQuirks": ["Hyde scores double for Bribes Possessed by Doctor"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 13,
+      "name": "Doctor (Jekyll)",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [7, 21],
+      "revealPowers": [116],
+      "gamePlayQuirks": ["Doctor has 2 Identity Cards. Each Identity card has its own Agenda.", "Doctor may be the PC of two players. A player trying to Bribe or use Kompromat on such a PC must choose one of the two players to accept or refuse. Both players become suspect if Kompromat is refused."],
+      "iconUrl": "Doctor.png",
+      "agenda": {
+        "name": "Science",
+        "objectives": [
+          {
+            "description": "1 point if Doctor Escapes",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "+3 points if Contaminated",
+                "pointValue": 3
+              },
+              {
+                "description": "+3 points if Possess Artifact",
+                "pointValue": 3
+              }
+            ]
+          },
+          {
+            "description": "3 points if News and Authorities do not have Evidence at Stationfall",
+            "pointValue": 3,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": ["Jekyll scores normally for any Bribes Possessed by Doctor"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 14,
+      "name": "Drones",
+      "characterType": 2,
+      "influenceLimit": 0,
+      "abilities": [22, 23],
+      "revealPowers": [],
+      "gamePlayQuirks": [
+        "Drones have no identity cards",
+        "Drones are never activated and therefore can never Free Pick Up or Drop.",
+        "Drones can perform Action and may Possess Items and Date",
+        "Both Drones possess internal Bludgeons",
+        "Using console Action Remote Control is the only way to act with Drones. Unless Digital Assistant is in the game."
+      ],
+      "iconUrl": "Drones.png",
+      "agenda": {
+        "name": "None",
+        "objectives": [
+          {
+            "description": "Drones have no agenda.",
+            "pointValue": 0,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": [
+          "Drones have no identity cards, and thus can not be anybody's PC or BC"
+        ]
+      },
+      "bonusPoints": 7
+    },
+    {
+      "id": 15,
+      "name": "Engineer",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [9, 24],
+      "revealPowers": [117],
+      "gamePlayQuirks": ["If an unlaunched Pod is targeted by Overload and then launches before Time marker resolves, the Pod is Annihilated when the Time marker resolves"],
+      "iconUrl": "Engineer.png",
+      "agenda": {
+        "name": "Preserve Ecosphere",
+        "objectives": [
+          {
+            "description": "3 points if Antimatter detonates On Board before Stationfall",
+            "pointValue": 3,
+            "subObjectives": [          ]
+          },
+          {
+            "description": "3 points if no Contaminated Characters Escape",
+            "pointValue": 0,
+            "subObjectives": [          ]
+          },
+          {
+            "description": "2 points if Artifact does not Escape",
+            "pointValue": 0,
+            "subObjectives": [          ]
+          },{
+            "description": "1 point if Innocent, but may win even if Guilty.",
+            "pointValue": 0,
+            "subObjectives": [          ]
+          }
+        ],
+        "ScoringQuirks": ["May win if Guilty"]
+      },
+      "bonusPoints": 2
+    },
+    {
+      "id": 16,
+      "name": "Exile",
+      "characterType": 1,
+      "influenceLimit": 6,
+      "abilities": [11, 25],
+      "revealPowers": [118, 119],
+      "gamePlayQuirks": [],
+      "iconUrl": "Exile.png",
+      "agenda": {
+        "name": "Back in the Game",
+        "objectives": [
+          {
+            "description": "2 points if Exile Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+              {
+                "description": "+2 points for each Possessed Kompromat of Escaped Characters",
+                "pointValue": 2
+              },
+              {
+                "description": "+3 points if Exile has Evidence and News (offsite) does not.",
+                "pointValue": 3
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 16,
+      "name": "Inspector",
+      "characterType": 1,
+      "influenceLimit": 4,
+      "abilities": [26, 27],
+      "revealPowers": [120],
+      "gamePlayQuirks": ["Inspector shuttle can be launched if Inspector is present. (or with Jury Rig)"],
+      "iconUrl": "Inspector.png",
+      "agenda": {
+        "name": "Dirty",
+        "objectives": [
+          {
+            "description": "2 points if Inspector Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+              {
+                "description": "+4 points if Possess Briefcase",
+                "pointValue": 4
+              }
+            ]
+          },
+          {
+            "description": "1 point if Authorities (offsite) end with the Evidence.",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "+2 points if News (offsite) does not.",
+                "pointValue": 2
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": ["Inspector Scores double for Possessed Bribes"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 17,
+      "name": "Legal",
+      "characterType": 2,
+      "influenceLimit": 4,
+      "abilities": [28, 29],
+      "revealPowers": [121, 122],
+      "gamePlayQuirks": [
+        "NDA is Data. Legal does not possess NDA, but can Manufacture it into the Possession of Colocated Characters.",
+        "Characters Possessing NDA may not Copy, Delete, Deliver, or be Robbed of Data.",
+        "Legal may manufacture NDA into Downed Character's Possession."
+      ],
+      "iconUrl": "Legal.png",
+      "agenda": {
+        "name": "Reduce Corporate Liability",
+        "objectives": [
+          {
+            "description": "1 point for each Human that Escapes with NDA",
+            "pointValue": 0,
+            "subObjectives": []
+          },
+
+          {
+            "description": "4 points if no Humans Escape or all Escaped Humans have NDA",
+            "pointValue": 4,
+            "subObjectives": []
+          },
+
+          {
+            "description": "2 points if the Evidence does not Escape",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+
+          {
+            "description": "1 point for each Suspect (Not Guilty) PC Stationfall",
+            "pointValue": 0,
+            "subObjectives": []
+          }
+        ],
         "ScoringQuirks": ["X"]
       },
       "bonusPoints": 0
+    },
+    {
+      "id": 18,
+      "name": "Maintenance Clones",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [8, 24],
+      "revealPowers": [123],
+      "gamePlayQuirks": [
+        "3 characters on board: alpha, beta and gamma",
+        "When activating perform Actions with a single Clone per turn.",
+        "Each clone has a Item limit of 2",
+        "Each clone can Possess it own Data types and does not automatically share it with other Clones.",
+        "Can still be activated and Renegotiated as long as at least one of them has not Escaped or been Annihilated."
+      ],
+      "iconUrl": "MaintenanceClones.png",
+      "agenda": {
+        "name": "Prove Clones Exist",
+        "objectives": [
+          {
+            "description": "1 point if a Clone Escapes",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "+4 points if at least two Clones Escape",
+                "pointValue": 4
+              },
+              {
+                "description": "+2 points if News ends with Evidence",
+                "pointValue": 2
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 8
+    },
+    {
+      "id": 19,
+      "name": "Medical",
+      "characterType": 2,
+      "influenceLimit": 4,
+      "abilities": [30, 20],
+      "revealPowers": [124],
+      "gamePlayQuirks": [
+        "Free steps from Emergency Response ability can be chained together.",
+        "Can not revive Unhelmeted Humans in Hazards."
+      ],
+      "iconUrl": "Medical.png",
+      "agenda": {
+        "name": "Be Really Useful",
+        "objectives": [
+          {
+            "description": "2 point if no Down Humans On Board at Stationfall",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "1 points for each star reached on the tracker on the Character card. Move tracker one slot for every.",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "Human Revival performed by Medical",
+                "pointValue": 0
+              },
+              {
+                "description": "Cube moved to Betrayal upon Medical's Reveal",
+                "pointValue": 0
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": [
+          "Positions on the track which have a star: 1, 2, 3, 4, 6, 8, 11+. 7 points maximum"
+        ]
+      },
+      "bonusPoints": 4
+    },
+    {
+      "id": 20,
+      "name": "Microbiologist",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [7, 2],
+      "revealPowers": [125],
+      "gamePlayQuirks": [],
+      "iconUrl": "Microbiologist.png",
+      "agenda": {
+        "name": "Sentient Pathogen",
+        "objectives": [
+          {
+            "description": "2 points if Microbiologist Escapes",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point for every Contaminated Character that Escapes",
+            "pointValue": 0,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if the X-Secret Escapes",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": ["X"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 21,
+      "name": "Operative",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [31, 9],
+      "revealPowers": [126, 127],
+      "gamePlayQuirks": [
+        "Has 3 trap tokens that can be used once revealed. 1 token is the real trap, 2 are decoys that do nothing."
+      ],
+      "iconUrl": "Operative.png",
+      "agenda": {
+        "name": "Coverup",
+        "objectives": [
+          {
+            "description": "2 points if Evidence does not Escape",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if X-Secret does not Escape.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if no Innocent PCs Escape",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if no Contaminated Characters Escape",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point if no Robots Escape",
+            "pointValue": 1,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 2
+    },
+    {
+      "id": 22,
+      "name": "Security",
+      "characterType": 2,
+      "influenceLimit": 4,
+      "abilities": [32, 33],
+      "revealPowers": [128],
+      "gamePlayQuirks": [
+        "Starts with an integral gun that can not be removed."
+      ],
+      "iconUrl": "Security.png",
+      "agenda": {
+        "name": "Peace Through Superior Firepower",
+        "objectives": [
+          {
+            "description": "1 point per Down Fugitive, Monster or non-innocent Player PC On Board at Stationfall",
+            "pointValue": 0,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point per Down Human with Bludgeon or Gun On Board at Stationfall",
+            "pointValue": 0,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point if Briefcase does not Escape",
+            "pointValue": 1,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point if Aftifact does not Escape",
+            "pointValue": 1,
+            "subObjectives": [
+              {
+                "description": "+1 point if both Briefcase + Artifact do not Escape",
+                "pointValue": 1
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 9
+    },
+    {
+      "id": 23,
+      "name": "Station Chief",
+      "characterType": 1,
+      "influenceLimit": 5,
+      "abilities": [9, 17],
+      "revealPowers": [129],
+      "gamePlayQuirks": [],
+      "iconUrl": "StationChief.png",
+      "agenda": {
+        "name": "Go Down with The Ship",
+        "objectives": [
+          {
+            "description": "1 point for every other Human that Escapes",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "+1 point per NPC with the Officer ability that escapes.",
+                "pointValue": 0
+              }
+            ]
+          },
+          {
+            "description": "2 points if Station Chief On Board and Live at Stationfall",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 2
+    },
+    {
+      "id": 24,
+      "name": "Stowaway",
+      "characterType": 1,
+      "influenceLimit": 4,
+      "abilities": [1, 25],
+      "revealPowers": [130],
+      "gamePlayQuirks": [
+        "Starts off the board. First ever action must be to Step into any Dark Section. Cannot be interacted until then."
+      ],
+      "iconUrl": "Stowaway.png",
+      "agenda": {
+        "name": "Scoop of a Lifetime",
+        "objectives": [
+          {
+            "description": "2 points if News (Offsites) ends with X-Secret",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if News (Offsites) ends with Evidence",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+
+          {
+            "description": "2 points if Stowaway Escapes",
+            "pointValue": 2,
+            "subObjectives": [
+              {
+                "description": "+3 points if Escape with Evidence and no other Character does.",
+                "pointValue": 3
+              }
+            ]
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 25,
+      "name": "Stranger",
+      "characterType": 1,
+      "influenceLimit": 6,
+      "abilities": [16],
+      "revealPowers": [131, 132],
+      "gamePlayQuirks": [],
+      "iconUrl": "Stranger.png",
+      "agenda": {
+        "name": "It's Personal",
+        "objectives": [
+          {
+            "description": "1 point if your Secret Identity is not revealed until Stationfall",
+            "pointValue": 1,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point if Possess X-Secret",
+            "pointValue": 1,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if you score Bonus Points",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Live and Colocated with a Bonus Character of yours at Stationfall",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 26,
+      "name": "Telepathic Rat",
+      "characterType": 5,
+      "influenceLimit": 8,
+      "abilities": [34, 10],
+      "revealPowers": [133],
+      "gamePlayQuirks": [
+        "Rat is an item, it can be Picked Up, Dropped, Thrown etc.",
+        "Cannot possess items or data",
+        "Starts contaminated , can be decontaminated normally",
+        "Cannot be bribed",
+        "Cannot be attacked or ever become down."
+      ],
+      "iconUrl": "TelepathicRat.png",
+      "agenda": {
+        "name": "Penance",
+        "objectives": [
+          {
+            "description": "1 point for each Down Human or Robot Colocated with Rat a Stationfall",
+            "pointValue": 0,
+            "subObjectives": [
+              {
+                "description": "+2 points for each Possessed Kompromat of Colocated Down Characters",
+                "pointValue": 0
+              }
+            ]
+          },
+          {
+            "description": "2 points if Rat Colocated with Artifact at Stationfall",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Rat Colocated with Briefcase at Stationfall",
+            "pointValue": 2,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": ["Can win even if Guilty"]
+      },
+      "bonusPoints": 1
+    },
+    {
+      "id": 27,
+      "name": "Troubleshooter",
+      "characterType": 1,
+      "influenceLimit": 6,
+      "abilities": [1, 24],
+      "revealPowers": [134],
+      "gamePlayQuirks": ["Starts with a Bludgeon"],
+      "iconUrl": "Troubleshooter.png",
+      "agenda": {
+        "name": "Pristine 'Til The End",
+        "objectives": [
+          {
+            "description": "2 points if Antimatter is not Armed at Stationfall.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if Project X was never released.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "2 points if no Sections are Damaged at Stationfall.",
+            "pointValue": 2,
+            "subObjectives": []
+          },
+          {
+            "description": "1 point for each Live Robot at Stationfall.",
+            "pointValue": 0,
+            "subObjectives": []
+          }
+        ],
+        "ScoringQuirks": []
+      },
+      "bonusPoints": 2
     }
   ]
 }

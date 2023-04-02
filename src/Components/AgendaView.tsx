@@ -12,6 +12,7 @@ const bonusPoints = props.character.bonusPoints;
 
   return (
     <div>
+      <h1>{props.character.name}</h1>
       <h1>{agenda.name}</h1>
       <div>
         {agenda.objectives.map((o) => (

@@ -88,14 +88,14 @@
       "id": 13,
       "name": "Vengeful",
       "abilityColor": 3,
-      "abilityType": 0,
+      "abilityType": 2,
       "description": "Using Corpsicle's Kompromat will additionally give her a Bludgeon. Her Kompromat can be used even if Down, which will instantly Revive her if down."
     },
     {
       "id": 14,
       "name": "Dying",
       "abilityColor": 2,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "May not be activated when Exhausted and gets no free Pick Up or Drop when activated."
     },
     {
@@ -272,6 +272,210 @@
       "abilityColor": 3,
       "abilityType": 3,
       "description": "During Botanist Player's Activation phase, if Fang Moss is not Possessed by a Live Character, Fang Moss may perform a Free Step or Annihilate a Down Colocated Human, Dropping its Items."
+    },
+    {
+      "id": 106,
+      "name": "Mission First",
+      "abilityColor": 2,
+      "abilityType": 2,
+      "description": "Upon Reveal, return all of your Influence cubes in Betrayal to your pool."
+    },
+    {
+      "id": 107,
+      "name": "Shapeshift Switch",
+      "abilityColor": 5,
+      "abilityType": 2,
+      "description": "Upon Reveal, if Live may swap locations with any Human or Robot NPC that is not Escaped or Annihilated. Characters also swap all non-Integral Possessions (Free Drop any Item exceeding the Item Limit. Chosen by the active player."
+    },
+    
+    {
+      "id": 108,
+      "name": "Last Gasp",
+      "abilityColor": 6,
+      "abilityType": 2,
+      "description": "Upon reveal, Revive if Down or perform an Action."
+    },
+    {
+      "id": 109,
+      "name": "Recorded Confessional",
+      "abilityColor": 3,
+      "abilityType": 2,
+      "description": "Upon Reveal, if Live choose a Colocated Human. All other Innocent players who have that Human as a Conspirator become Suspect."
+    },
+    {
+      "id": 110,
+      "name": "Brutal",
+      "abilityColor": 3,
+      "abilityType": 3,
+      "description": "May use a Bludgeon to Down a Helmeted Human, at which point Annihilate both the Bludgeon and the Helmet"
+    },
+    {
+      "id": 111,
+      "name": "Self-Repair",
+      "abilityColor": 2,
+      "abilityType": 3,
+      "description": "You may Activate Cyborg if Down and as your first action Revive Cyborg."
+    },
+    {
+      "id": 112,
+      "name": "Point Break",
+      "abilityColor": 5,
+      "abilityType": 1,
+      "description": "If you are Live, Possess a Helmet, and are Colocated with Rocket Wings at Stationfall, you Escape"
+    },
+    {
+      "id": 113,
+      "name": "Root Access",
+      "abilityColor": 6,
+      "abilityType": 3,
+      "description": "As an Action Perform an Action with Any Robot that Possesses Digital Assistant. Ignore Self-Preservation"
+    },
+    {
+      "id": 114,
+      "name": "Trojan Horse",
+      "abilityColor": 6,
+      "abilityType": 2,
+      "description": "Upon Reveal, Copy Digital Assistant to an Unescaped Character that Possesses Evidence or X-Secret."
+    },
+    {
+      "id": 115,
+      "name": "ZipGun",
+      "abilityColor": 3,
+      "abilityType": 2,
+      "description": "Upon reveal, gain a Gun."
+    },
+    {
+      "id": 116,
+      "name": "Fake Artifact",
+      "abilityColor": 6,
+      "abilityType": 2,
+      "description": "Upon Reveal, unless Possessed by a PC, Artifact moves to Doctor event if it was Annihilated"
+    },
+    {
+      "id": 117,
+      "name": "Overload",
+      "abilityColor": 3,
+      "abilityType": 2,
+      "description": "Upon reveal place a time marker in any Unescaped Section. When it resolves, Damage that Section."
+    },
+    {
+      "id": 118,
+      "name": "Blood From a Stone",
+      "abilityColor": 2,
+      "abilityType": 1,
+      "description": "After using Kompromat on an NPC, return it to your hand."
+    },
+    {
+      "id": 119,
+      "name": "Tradecraft",
+      "abilityColor": 2,
+      "abilityType": 3,
+      "description": "As an Action with Exile, discard two Kompromat from your hand and take a previously used NPC's Kompromat into your hand."
+    },
+    {
+      "id": 120,
+      "name": "Offshore Shenanigans",
+      "abilityColor": 2,
+      "abilityType": 2,
+      "description": "Upon Reveal, regain your Bribe if it has been used."
+    },
+    {
+      "id": 121,
+      "name": "Fine Print",
+      "abilityColor": 2,
+      "abilityType": 1,
+      "description": "You may activate NPCs Possessing NDA."
+    },
+    {
+      "id": 122,
+      "name": "Hardcopy",
+      "abilityColor": 2,
+      "abilityType": 3,
+      "description": "As an Action, any Character Colocated with Legal can Manufacture a copy of NDA."
+    },
+    {
+      "id": 123,
+      "name": "Go Go Go!",
+      "abilityColor": 6,
+      "abilityType": 2,
+      "description": "Upon Reveal, you may immediately perform an Action with each Live and Unescaped Clone."
+    },
+    {
+      "id": 124,
+      "name": "Haywire",
+      "abilityColor": 3,
+      "abilityType": 2,
+      "description": "Gains a Bludgeon."
+    },
+    {
+      "id": 125,
+      "name": "Infect",
+      "abilityColor": 3,
+      "abilityType": 3,
+      "description": "As an action, Contaminate a Colocated Human or Robot. If they have no empty item slots, they drop an Item of your choice. Humans and Robots can never have more than one Contamination."
+    },
+    {
+      "id": 126,
+      "name": "Claymore",
+      "abilityColor": 3,
+      "abilityType": 2,
+      "description": "Peek at, then place 3 trap tokens face down in 3 different Sections. Flip each token after a Human, Robot, or Monster enters the Section and Down them if it is the trap. Traps never trigger Suspicion, Guilt, or Self-Preservation."
+    },
+    {
+      "id": 127,
+      "name": "Never Gas Grenades",
+      "abilityColor": 3,
+      "abilityType": 3,
+      "description": "As an Action with Operative, place Asphyxiation Hazard in Operative's Section or a Section she can Throw to."
+    },
+    {
+      "id": 128,
+      "name": "Authorized Force",
+      "abilityColor": 3,
+      "abilityType": 1,
+      "description": "Lose Peacekeeper (ability)"
+    },
+    {
+      "id": 129,
+      "name": "Forceful Presence",
+      "abilityColor": 6,
+      "abilityType": 1,
+      "description": "At the start of Station Chief's Activation phase you may perform a Free Basic Action with a Colocated NPC or with an NPC Officer anywhere."
+    },
+    {
+      "id": 130,
+      "name": "Secret Cache",
+      "abilityColor": 4,
+      "abilityType": 2,
+      "description": "Upon Reveal, you or one of your Conspirators gains a Helmet."
+    },
+    {
+      "id": 131,
+      "name": "Homework",
+      "abilityColor": 6,
+      "abilityType": 2,
+      "description": "Upon Reveal, you may Reveal you BC and perform one Action with that Character."
+    },
+    {
+      "id": 132,
+      "name": "Enigma",
+      "abilityColor": 2,
+      "abilityType": 2,
+      "description": "If Schrödinger Reveal as Stranger, do not discard any card(s) (retain them as Bonus Characters). If Schrödinger Reveal as Stranger, then lose Uncanny."
+    },
+    {
+      "id": 133,
+      "name": "My Precious",
+      "abilityColor": 4,
+      "abilityType": 1,
+      "description": "Other player may not Throw, Airlock or Drop you. You may still be Given to Colocated Characters."
+    },
+    {
+      "id": 134,
+      "name": "Talk Them Through It",
+      "abilityColor": 6,
+      "abilityType": 1,
+      "description": "During your turn, if Troubleshooter is Live, your Conspirators move and act as though they have Jury Rig and Tunnel Rat."
     }
 
   ]
