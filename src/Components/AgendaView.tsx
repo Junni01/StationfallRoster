@@ -1,3 +1,4 @@
+import { Grid, List, ListItem } from "@mui/material";
 import { useState } from "react";
 import { Character } from "../types/CharacterTypes";
 
@@ -11,30 +12,31 @@ const agenda = props.character.agenda;
 const bonusPoints = props.character.bonusPoints;
 
   return (
-    <div>
-      <h1>{props.character.name}</h1>
-      <h1>{agenda.name}</h1>
-      <div>
+    <>
+      <Grid item xs={12}>{agenda.name}</Grid>
+      
         {agenda.objectives.map((o) => (
-          <div>
-            <h2>{o.description}</h2>
-            <ul>
+          <Grid item xs={12}>
+            {o.description}
+            <List>
               {o.subObjectives.map((so) => (
-                <li>{so.description}</li>
+                <ListItem>{so.description}</ListItem>
               ))}
-            </ul>
-          </div>
+            </List>
+          </Grid>
         ))}
-      </div>
-      {agenda.ScoringQuirks.length > 0 ? <h2>Scoring quirks</h2> : ""}
-      <ul>
+      
+      {agenda.ScoringQuirks.length > 0 ? <Grid item xs={12}>Scoring quirks</Grid> : ""}
+      <Grid item xs={12}>
+      <List>
         {agenda.ScoringQuirks.map((q) => (
-          <li>{q}</li>
-        ))}
-      </ul>
+          <ListItem>{q}</ListItem>
+          ))}
+      </List>
+          </Grid>
 
-      <h2>Bonus Character points</h2>
-      {bonusPoints.name}: {bonusPoints.description}
-    </div>
+      <Grid item xs={12}>Bonus Character points</Grid>
+      <Grid item xs={12}>{bonusPoints.name}: {bonusPoints.description}</Grid>
+    </>
   );
 };

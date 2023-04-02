@@ -273,7 +273,7 @@
       "abilities": [9, 15],
       "revealPowers": [109],
       "gamePlayQuirks": [],
-      "iconUrl": "Counsellor.png",
+      "iconUrl": "Counselor.png",
       "agenda": {
         "name": "Cloak and Dagger",
         "objectives": [
@@ -350,7 +350,7 @@
       "influenceLimit": 5,
       "abilities": [17, 18],
       "revealPowers": [112],
-      "gamePlayQuirks": ["X"],
+      "gamePlayQuirks": [],
       "iconUrl": "Daredevil.png",
       "agenda": {
         "name": "Thrillseeker",
@@ -425,23 +425,19 @@
       "gamePlayQuirks": ["Doctor has 2 Identity Cards. Each Identity card has its own Agenda.","Doctor may be the PC of two players. A player trying to Bribe or use Kompromat on such a PC must choose one of the two players to accept or refuse. Both players become suspect if Kompromat is refused."],
       "iconUrl": "Doctor.png",
       "agenda": {
-        "name": "X",
+        "name": "Cruelty",
         "objectives": [
           {
-            "description": "X",
+            "description": "2 points if Doctor Escapes",
             "pointValue": 0,
             "subObjectives": [
               {
-                "description": "X",
-                "pointValue": 0
+                "description": "+3 points if Possess Briefcase",
+                "pointValue": 3
               },
               {
-                "description": "X",
-                "pointValue": 0
-              },
-              {
-                "description": "X",
-                "pointValue": 0
+                "description": "+4 points if Escaped Live in a Pod with a Down Human",
+                "pointValue": 4
               }
             ]
           }

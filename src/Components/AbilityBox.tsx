@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import { useState } from "react";
 import { CharacterAbility } from "../types/CharacterTypes";
 
@@ -7,11 +8,11 @@ type AbilityProps = {
 
 export const CharacterAbilityBox = (props: AbilityProps) => {
   return (
-    <div>
-      <h3>{props.ability.name}</h3>
-      <ul>
-        <li>{props.ability.description}</li>
-      </ul>
-    </div>
+    <>
+      <Grid item xs={12}>{props.ability.name}</Grid>
+      <Grid item xs={12}>
+        {props.ability.description}
+      </Grid>
+    </>
   );
 };

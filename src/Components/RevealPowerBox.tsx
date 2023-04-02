@@ -1,3 +1,4 @@
+import { Grid, List, ListItem } from "@mui/material";
 import { CharacterAbility } from "../types/CharacterTypes";
 
 type RevealPowerProps = {
@@ -6,11 +7,15 @@ type RevealPowerProps = {
 
 export const CharacterRevealPowerBox = (props: RevealPowerProps) => {
   return (
-    <div>
-      <h3>{props.revealPower.name}</h3>
-      <ul>
-        <li>{props.revealPower.description}</li>
-      </ul>
-    </div>
+    <>
+      <Grid item xs={12}>
+        {props.revealPower.name}
+      </Grid>
+      <Grid item xs={12}>
+        <List>
+          <ListItem>{props.revealPower.description}</ListItem>
+        </List>
+      </Grid>
+    </>
   );
 };

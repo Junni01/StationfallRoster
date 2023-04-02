@@ -1,19 +1,26 @@
+import {
+  BottomNavigation,
+  BottomNavigationAction,
+  Button,
+  Grid,
+  Paper,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import { ReadCharacterData } from "../data/API";
 import { Character } from "../types/CharacterTypes";
 import { CharacterAbilityView } from "./AbilityView";
 import { CharacterAgendaView } from "./AgendaView";
 
-let loading : boolean = true;
+let loading: boolean = true;
 let characterListSize: number;
-let characterList: Character[]
+let characterList: Character[];
 
 export const CharacterView = () => {
-  
   const [characterView, setCharacterView] = useState(0);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [currentCharacter, setCharacter] = useState<Character>(characters[0]);
   const [characterIndex, setCharacterIndex] = useState(0);
+  const [selected, setSelected] = useState(0);
 
   useEffect(() => {
     characterList = ReadCharacterData();
@@ -33,10 +40,9 @@ export const CharacterView = () => {
   }
 
   function changeCharacter(direction: number) {
-
-console.log(direction)
-console.log(characterIndex)
-console.log(characterListSize)
+    console.log(direction);
+    console.log(characterIndex);
+    console.log(characterListSize);
 
     if (direction === 1 && characterIndex === characterListSize - 1) {
       setCharacter(characters[0] ?? characterList[0]);
@@ -62,30 +68,43 @@ console.log(characterListSize)
     console.log("Character changed, character is now " + characters[next].name);
   }
 
-if(loading) {
+  if (loading) {
+    return <div>Loading...</div>;
+  } else {
+    return (
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          {currentCharacter.name}
+        </Grid>
+        <Grid item xs={12}>
+          <img
+            src={"./src/assets/characterIcons/" + currentCharacter.iconUrl}
+          />
+        </Grid>
 
-<div>Loading...</div>
+        {characterView == 0 ? (
+          <CharacterAbilityView
+            character={currentCharacter}
+          ></CharacterAbilityView>
+        ) : (
+          <CharacterAgendaView
+            character={currentCharacter}
+          ></CharacterAgendaView>
+        )}
 
-} else {
+        <Paper
+          sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+          elevation={3}
+        >
+          <Button onClick={() => changeCharacter(-1)}>
+            Previous
+          </Button>
 
-  return (
-    <div>
-      
-      {characterView == 0 ? (
-        <CharacterAbilityView
-          character={currentCharacter}
-        ></CharacterAbilityView>
-      ) : (
-        <CharacterAgendaView character={currentCharacter}></CharacterAgendaView>
-      )}
-      <button onClick={() => changeCharacter(-1)}>Previous Character</button>
-      <button onClick={() => changeCharacterView()}>Flip</button>
-      <button onClick={() => changeCharacter(1)}>Next Character</button>
-    </div>
-  );
-}
+          <Button onClick={() => changeCharacterView()}>Flip</Button>
 
+          <Button onClick={() => changeCharacter(1)}>Next</Button>
+        </Paper>
+      </Grid>
+    );
+  }
 };
-function componentDidMount() {
-  throw new Error("Function not implemented.");
-}
