@@ -1,19 +1,39 @@
 import {
   BottomNavigation,
   BottomNavigationAction,
+  Box,
   Button,
   Grid,
+  IconButton,
   Paper,
+  Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { ReadCharacterData } from "../data/API";
 import { Character } from "../types/CharacterTypes";
 import { CharacterAbilityView } from "./AbilityView";
 import { CharacterAgendaView } from "./AgendaView";
+import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import FlipCameraAndroidOutlinedIcon from "@mui/icons-material/FlipCameraAndroidOutlined";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 let loading: boolean = true;
 let characterListSize: number;
 let characterList: Character[];
+
+
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: '1.8rem',
+  '@media (min-width:300px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+};
 
 export const CharacterView = () => {
   const [characterView, setCharacterView] = useState(0);
@@ -72,14 +92,35 @@ export const CharacterView = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <Grid container spacing={2}>
+      <>
         <Grid item xs={12}>
-          {currentCharacter.name}
+          <ThemeProvider theme={theme}>
+          <Typography variant="h3">{currentCharacter.name.toUpperCase()}</Typography>
+          </ThemeProvider>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={4}>
+          <Grid item xs={12}>
+            <Typography>
+              IF: {currentCharacter.influenceLimit}
+              </Typography> 
+          </Grid>
+          <Grid item xs={12}>
+            <Typography>
+            Type: {currentCharacter.characterType.name}
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid item xs={4}>
+   
           <img
+          height={"50px"}
+          width={"50px"} 
             src={"./src/assets/characterIcons/" + currentCharacter.iconUrl}
           />
+
+        </Grid>
+        <Grid item xs={4}>
+          <Button>In Play</Button>
         </Grid>
 
         {characterView == 0 ? (
@@ -92,19 +133,62 @@ export const CharacterView = () => {
           ></CharacterAgendaView>
         )}
 
-        <Paper
-          sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
-          elevation={3}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            bgcolor: "background.paper",
+          }}
         >
-          <Button onClick={() => changeCharacter(-1)}>
-            Previous
-          </Button>
+          <Box>
+            <IconButton
+              sx={{ fontSize: "20px" }}
+              onClick={() => changeCharacter(-1)}
+            >
+              <ArrowBackOutlinedIcon></ArrowBackOutlinedIcon>
+            </IconButton>
+          </Box>
 
-          <Button onClick={() => changeCharacterView()}>Flip</Button>
+          <Box>
+            <IconButton
+              sx={{ fontSize: "20px" }}
+              onClick={() => changeCharacterView()}
+            >
+              <FlipCameraAndroidOutlinedIcon></FlipCameraAndroidOutlinedIcon>
+            </IconButton>
+          </Box>
 
-          <Button onClick={() => changeCharacter(1)}>Next</Button>
-        </Paper>
-      </Grid>
+          <Box>
+            <IconButton
+              sx={{ fontSize: "20px" }}
+              onClick={() => changeCharacter(1)}
+            >
+              <ArrowForwardOutlinedIcon></ArrowForwardOutlinedIcon>
+            </IconButton>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bgcolor: "background.paper",
+          }}
+        >
+          <Box>
+            <Button sx={{ fontSize: "10px" }}>In play only</Button>
+          </Box>
+        </Box>
+      </>
     );
   }
 };

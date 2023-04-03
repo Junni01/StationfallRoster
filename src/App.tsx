@@ -1,12 +1,13 @@
+import { Grid } from '@mui/material'
 import './App.css'
 import { CharacterView } from './Components/Character'
 
 function App() {
 
   return (
-    <div className="App">
+    <Grid container maxWidth="sm">
       <CharacterView></CharacterView>
-    </div>
+    </Grid>
   )
 }
 

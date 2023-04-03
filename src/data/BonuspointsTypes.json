@@ -53,6 +53,12 @@
             "name": "Grudge",
             "description": "3 points if {Character} is your BC and is not Live at Stationfall",
             "pointValue": 3
+        },
+        {
+            "id": 10,
+            "name": "Friend",
+            "description": "3 points if {Character} is your BC and Escapes",
+            "pointValue": 3
         }
     ]
 }

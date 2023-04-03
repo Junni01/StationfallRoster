@@ -13,26 +13,17 @@ export const CharacterAbilityView = (props: CharacterProps) => {
 
   return (
     <>
-      <Grid item xs={6}>
-        Influence Limit: {character.influenceLimit}
-      </Grid>
-      <Grid item xs={6}>
-        Character Type: {character.characterType.name}
-      </Grid>
       <Grid item xs={12}>
         Abilities:
       </Grid>
       {character.abilities.map((a) => (
-        <CharacterAbilityBox key={a.id} ability={a}></CharacterAbilityBox>
+        <Grid item xs={12}><CharacterAbilityBox key={a.id} ability={a}></CharacterAbilityBox></Grid>
       ))}
       <Grid item xs={12}>
         Reveal Powers:
       </Grid>
       {character.revealPowers.map((p) => (
-        <CharacterRevealPowerBox
-          key={p.id}
-          revealPower={p}
-        ></CharacterRevealPowerBox>
+        <Grid item xs={12}><CharacterAbilityBox key={p.id} ability={p}></CharacterAbilityBox></Grid>
       ))}
       {character.gamePlayQuirks.length > 0 ? (
         <Grid item xs={12}>
