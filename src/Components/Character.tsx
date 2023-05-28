@@ -3,6 +3,7 @@ import {
   BottomNavigationAction,
   Box,
   Button,
+  Drawer,
   Grid,
   IconButton,
   Paper,
@@ -16,24 +17,11 @@ import { CharacterAgendaView } from "./AgendaView";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import FlipCameraAndroidOutlinedIcon from "@mui/icons-material/FlipCameraAndroidOutlined";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 let loading: boolean = true;
 let characterListSize: number;
 let characterList: Character[];
-
-
-const theme = createTheme();
-
-theme.typography.h3 = {
-  fontSize: '1.8rem',
-  '@media (min-width:300px)': {
-    fontSize: '1.5rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '2rem',
-  },
-};
 
 export const CharacterView = () => {
   const [characterView, setCharacterView] = useState(0);
@@ -80,9 +68,7 @@ export const CharacterView = () => {
       );
       return;
     }
-
     const next = characterIndex + direction;
-
     setCharacterIndex(next);
     setCharacter(characterList[next]);
     console.log("Character changed, character is now " + characters[next].name);
@@ -93,34 +79,43 @@ export const CharacterView = () => {
   } else {
     return (
       <>
-        <Grid item xs={12}>
-          <ThemeProvider theme={theme}>
-          <Typography variant="h3">{currentCharacter.name.toUpperCase()}</Typography>
-          </ThemeProvider>
-        </Grid>
-        <Grid item xs={4}>
-          <Grid item xs={12}>
-            <Typography>
-              IF: {currentCharacter.influenceLimit}
-              </Typography> 
-          </Grid>
-          <Grid item xs={12}>
-            <Typography>
-            Type: {currentCharacter.characterType.name}
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid item xs={4}>
-   
-          <img
-          height={"50px"}
-          width={"50px"} 
-            src={"./src/assets/characterIcons/" + currentCharacter.iconUrl}
-          />
+      <Grid item xs={12} sx={{mb:2}}>
 
+        <Typography variant="h4" sx={{textAlign: 'center'}}>
+          {currentCharacter.name.toUpperCase()}
+        </Typography>
+      </Grid>
+
+        <Grid item xs={6}>
+          <Paper sx={{ml:1, mr: 1}}>
+
+          <Typography sx={{textAlign: 'center'}}>
+            Influence Limit: <b>{currentCharacter.influenceLimit}</b>
+          </Typography>
+          </Paper>
         </Grid>
-        <Grid item xs={4}>
-          <Button>In Play</Button>
+        <Grid item xs={6}>
+          <Paper sx={{ml:1, mr: 1}}>
+
+          <Typography sx={{textAlign: 'center'}}>
+            Type: <b>{currentCharacter.characterType.name}</b>
+          </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} display={'flex'} justifyContent={'center'} sx={{p: 2}}>
+          {characterView === 0 ? (
+            <img
+              height={"150px"}
+              width={"150px"}
+              src={"./src/assets/characterIcons/" + currentCharacter.iconUrl}
+            />
+          ) : (
+            <img
+              height={"400px"}
+              width={"auto"}
+              src={"./src/assets/characterPictures/" + currentCharacter.iconUrl}
+            />
+          )}
         </Grid>
 
         {characterView == 0 ? (
@@ -170,22 +165,6 @@ export const CharacterView = () => {
             >
               <ArrowForwardOutlinedIcon></ArrowForwardOutlinedIcon>
             </IconButton>
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bgcolor: "background.paper",
-          }}
-        >
-          <Box>
-            <Button sx={{ fontSize: "10px" }}>In play only</Button>
           </Box>
         </Box>
       </>

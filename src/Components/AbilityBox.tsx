@@ -10,14 +10,13 @@ type AbilityProps = {
 export const CharacterAbilityBox = (props: AbilityProps) => {
   return (
     <>
-      <Grid item xs={12}>
-        <Typography variant="h4">{props.ability.name}</Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography sx={{ textAlign: "left" }}>
-          {props.ability.description}
-        </Typography>
-      </Grid>
+      <Typography fontWeight={"bold"} textTransform={"capitalize"}>
+        {props.ability.name}
+      </Typography>
+
+      <Typography sx={{ textAlign: "left" }}>
+        {props.ability.description}
+      </Typography>
     </>
   );
 };
