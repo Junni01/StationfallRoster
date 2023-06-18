@@ -5,7 +5,7 @@ import { CharacterView } from './Components/Character'
 function App() {
 
   return (
-    <Grid container maxWidth="sm">
+    <Grid container maxWidth="sm" paddingBottom={7} justifyContent={'center'}>
       <CharacterView></CharacterView>
     </Grid>
   )

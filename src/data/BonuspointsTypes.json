@@ -27,13 +27,13 @@
         {
             "id": 5,
             "name": "Friend",
-            "description": "2 points if Billionaire is your BC and <i>Fletcher</i> Escapes",
+            "description": "2 points if Billionaire is your BC and Fletcher Escapes",
             "pointValue": 2
         },
         {
             "id": 6,
             "name": "Friend",
-            "description": "2 points if Botanist is your BC and <i>Fang Moss</i> Escapes (No points if Botanist Escapes)",
+            "description": "2 points if Botanist is your BC and Fang Moss Escapes (No points if Botanist Escapes)",
             "pointValue": 2
         },
         {

@@ -108,6 +108,7 @@ export function ReadCharacterData(): Character[] {
 const character : Character = {
     id: c.id,
     name: c.name,
+    active: true,
     characterType: characterTypes.find((ct) => ct.id === c.characterType) ?? {
       id: 0,
       name: "",

@@ -10,11 +10,11 @@ type AbilityProps = {
 export const CharacterAbilityBox = (props: AbilityProps) => {
   return (
     <>
-      <Typography fontWeight={"bold"} textTransform={"capitalize"}>
-        {props.ability.name}
+      <Typography  fontWeight={"bold"} textTransform={"capitalize"} gutterBottom>
+        {props.ability.name} ({props.ability.abilityType.name})
       </Typography>
 
-      <Typography sx={{ textAlign: "left" }}>
+      <Typography  sx={{ textAlign: "left", pb: 2 }} >
         {props.ability.description}
       </Typography>
     </>

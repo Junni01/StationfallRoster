@@ -304,7 +304,7 @@
         ],
         "ScoringQuirks": []
       },
-      "bonusPoints": 0
+      "bonusPoints": 1
     },
     {
       "id": 9,
@@ -580,7 +580,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Inspector",
       "characterType": 1,
       "influenceLimit": 4,
@@ -617,7 +617,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Legal",
       "characterType": 2,
       "influenceLimit": 4,
@@ -658,10 +658,10 @@
         ],
         "ScoringQuirks": ["X"]
       },
-      "bonusPoints": 0
+      "bonusPoints": 4
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Maintenance Clones",
       "characterType": 1,
       "influenceLimit": 5,
@@ -698,7 +698,7 @@
       "bonusPoints": 8
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Medical",
       "characterType": 2,
       "influenceLimit": 4,
@@ -739,7 +739,7 @@
       "bonusPoints": 4
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Microbiologist",
       "characterType": 1,
       "influenceLimit": 5,
@@ -771,7 +771,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 21,
+      "id": 22,
       "name": "Operative",
       "characterType": 1,
       "influenceLimit": 5,
@@ -815,7 +815,7 @@
       "bonusPoints": 2
     },
     {
-      "id": 22,
+      "id": 23,
       "name": "Security",
       "characterType": 2,
       "influenceLimit": 4,
@@ -859,7 +859,7 @@
       "bonusPoints": 9
     },
     {
-      "id": 23,
+      "id": 24,
       "name": "Station Chief",
       "characterType": 1,
       "influenceLimit": 5,
@@ -891,7 +891,7 @@
       "bonusPoints": 2
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Stowaway",
       "characterType": 1,
       "influenceLimit": 4,
@@ -931,7 +931,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Stranger",
       "characterType": 1,
       "influenceLimit": 6,
@@ -968,7 +968,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Telepathic Rat",
       "characterType": 5,
       "influenceLimit": 8,
@@ -1011,7 +1011,7 @@
       "bonusPoints": 1
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Troubleshooter",
       "characterType": 1,
       "influenceLimit": 6,

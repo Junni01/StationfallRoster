@@ -102,140 +102,140 @@
       "id": 15,
       "name": "Wormtongue",
       "abilityColor": 2,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an Action, move a cube on a Colocated Human's card to Betrayal."
     },
     {
       "id": 16,
       "name": "Uncanny",
       "abilityColor": 2,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "It takes two Activation discs for this Character to become Exhausted."
     },
     {
       "id": 17,
       "name": "Pride",
       "abilityColor": 4,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "Cannot be Robbed."
     },
     {
       "id": 18,
       "name": "Adrenaline",
       "abilityColor": 5,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "Is not Downed by Hazards. Step or Airlock into Section with Hazard is always free."
     },
     {
       "id": 19,
       "name": "A.I.",
       "abilityColor": 1,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "Can only perform Console actions. Characters Possessing Digital Assistant have Officer for Section actions and do not require Abandon ship to launch Pod."
     },
     {
       "id": 20,
       "name": "Helpful",
       "abilityColor": 2,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "No player may have more than one influence cube on this Character."
     },
     {
       "id": 21,
       "name": "Split",
       "abilityColor": 2,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "Has two Identity Cards."
     },
     {
       "id": 22,
       "name": "Disassemble",
       "abilityColor": 6,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an Action, can Down self to Repair a Colocated Section Robot."
     },
     {
       "id": 23,
       "name": "Remote Control",
       "abilityColor": 1,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "Cannot be Bribed, Influenced, or Activated Directly. As a Console Action Characters may perform an Action with any Live Drone."
     },
     {
       "id": 24,
       "name": "Jury Rig",
       "abilityColor": 6,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an action, Repair a Colocated Damaged Section or Down Robot."
     },
     {
       "id": 25,
       "name": "Hacker",
       "abilityColor": 1,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "May perform a Free Console Action instead of a Free Pick Up or Drop. If Jammers are OFF may perform Console Actions in any Section."
     },
     {
       "id": 26,
       "name": "Investigator",
       "abilityColor": 6,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "Can Pick Up Kompromat or Manufacture Data from adjacent Sections."
     },
     {
       "id": 27,
       "name": "Badge",
       "abilityColor": 3,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "May Rob Items as if in possession of a Gun."
     },
     {
       "id": 28,
       "name": "Process Server",
       "abilityColor": 6,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an Action, Manufacture NDA into the Possession of all Colocated Humans and Robots."
     },
     {
       "id": 29,
       "name": "Lawyer Up",
       "abilityColor": 4,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an Action may change a Colocated Innocent or Guilty PC's status to suspect."
     },
     {
       "id": 30,
       "name": "Emergency Response",
       "abilityColor": 6,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "As an Action, may Revive a Human. Step of Airlock into Sections with Down Human is always Free."
     },
     {
       "id": 31,
       "name": "EMP Burst",
       "abilityColor": 3,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "Damage Operative's Section. Down all Robots in it and Delete all Colocated Data."
     },
     {
       "id": 32,
       "name": "Peacekeeper",
       "abilityColor": 4,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "May only Attack Fugitives, Monsters or non-innocent PCs. May not Sabotage."
     },
     {
       "id": 33,
       "name": "Armored",
       "abilityColor": 4,
-      "abilityType": 0,
+      "abilityType": 1,
       "description": "Cannot be Attacked or Robbed by Bludgeon."
     },
     {
       "id": 34,
       "name": "Telepathy",
       "abilityColor": 3,
-      "abilityType": 0,
+      "abilityType": 3,
       "description": "Perform an Action with a Colocated Unhelmeted Human, ignoring Self-Preservation. May only perform Telepathy Actions."
     },
     {

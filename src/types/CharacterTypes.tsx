@@ -14,6 +14,7 @@ export interface Character {
     },
     bonusPoints: BonusPointsType
     status: CharacterStatus
+    active: boolean
 }
 
 export interface Objective {
